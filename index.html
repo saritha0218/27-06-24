@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            position: fixed;
+            top:0;
+            left: 0;
+            color: black;
+            background-color:white;
+            width: 100%;
+            height: 50px;
+            z-index: 9999;
+        }
+        #left{
+            position: absolute;
+            left: 10px;
+            top: 15px;
+            font-size: 25px;
+        }
+        #right{
+            position: absolute;
+            right: 10px;
+            top: 15px;
+            font-size: 25px;
+        }
+        #div img{
+            width: 100%;
+            height: 1000px;
+        }
+        #div h1{
+            position: absolute;
+            top: 60%;
+            left: 45%;
+            text-align: center;
+            z-index: 1;
+            color: white;
+        }
+        #S1 h1 {
+            position: absolute;
+            margin-top: 35px;
+            margin-left:35px;
+            background-color: black;
+            color: white;
+        }
+        #S1 img{
+            width: 300px;
+            margin: 25px;
+            height: 300px;
+        }
+        .flex{
+            display: flex;                   /*  USING FLEX PROPERTY  */
+            flex-wrap: wrap;
+        }
+        #S2 div{
+            display: inline-block;
+            width: 320px;
+            height: 350px;
+            margin: 23px;
+            margin: 23px;
+        }
+        section  img{
+            padding: 10px;
+            width: 250px;
+            height: 200px;
+        }
+        figure{
+            display: inline-block;
+        }
+        figcaption{
+            display: block;
+            text-align:center;
+            background-color: white(189, 181, 181);
+        }
+        figure img{
+            height: 350px;
+            width: 280px;
+        }
+        .C1{
+            border: none;
+            width: 310px;
+        }
+        figcaption button{
+            width: 280px;
+            padding: 10px;
+            border: none;
+            color: black;
+            font-weight: bold;
+        }
+        figcaption button:hover {
+            
+            background: rgb(137, 129, 129);
+        }
+        figcaption b{
+            font-weight: bold;
+        }
+        form input{
+            width: 90%;
+            height: 35px;
+            color: gray;
+            font-weight: bold;
+            padding-left: 30px;
+            margin-left: 20px;
+        }
+        form button{
+            margin-left: 20px;
+            width: 180px;
+            height: 50px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</header>
+<body>
+    <header>  
+        <div id="left">SJ Restaurant</div> 
+        <div id="right">Food Items &emsp;&emsp; About &emsp;&emsp; Contact</div>
+    </header><br><br>
+
+    <div id="div">
+        <img src="./SJ.jpg">
+        <h1>SJ Restaurant</h1>
+    </div><br><br>
+
+    <section id="S1">
+      <h2>Food Items</h2>
+      <hr>
+      <div class="flex">
+      <div>
+        <h1>ROTI</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Ruti_%28%E0%A6%B0%E0%A7%81%E0%A6%9F%E0%A6%BF%29.jpg/360px-Ruti_%28%E0%A6%B0%E0%A7%81%E0%A6%9F%E0%A6%BF%29.jpg">
+      </div>
+
+      <div>
+        <h1>Fried Rice</h1>
+        <img src="https://www.indianveggiedelight.com/wp-content/uploads/2020/06/veg-fried-rice-featured.jpg">
+      </div>
+      
+      <div>
+        <h1>Dhum Biryani</h1>
+        <img src="https://5.imimg.com/data5/CE/IY/BF/SELLER-99255927/htzpmwbmoklojshm4oyx-jpg-1000x1000.jpg">
+       </div>
+       
+       <div>
+        <h1>Shahi Paneer</h1>
+        <img src="https://myfoodstory.com/wp-content/uploads/2022/04/Shahi-Paneer-4.jpg">
+       </div>
+
+       <div>
+        <h1>Chicken Curry</h1>
+        <img src="https://images.saymedia-content.com/.image/t_share/MTgwODQyNjYwMDQxNzk0OTIw/10-fiery-red-spicy-chicken-curries-of-india.jpg">
+       </div>
+       
+       <div>
+        <h1>Tandoori Paneer</h1>
+        <img src="https://dishesandflavors.com/wp-content/uploads/2020/05/IMG_1739.jpg">
+       </div>
+       
+       <div>
+        <h1>Tofu</h1>
+        <img src="https://www.theconsciousplantkitchen.com/wp-content/uploads/2023/03/Schezuan-Tofu-5.jpg">
+       </div>
+       
+       <div>
+        <h1>Rice and Dal</h1>
+        <img src="https://cdn.cdnparenting.com/articles/2018/11/19123301/soft-mashed-rice-and-moong-dal-recipe_726334837-768x525.jpg">
+       </div>
+
+       </div>
+    </section><br>
+
+    <section id="S2">
+        <h2>About</h2>
+        <hr>
+        <p>Welcome to our cozy neighborhood eatery, where delicious comfort food meets friendly service. Whether you're craving hearty burgers, fresh salads, or our signature homemade pies, there's something on our menu for everyone. Bring the whole family and enjoy a relaxed dining experience in a warm and inviting atmosphere.</p>
+        <div class="C1">
+        <figure>
+              <img src="https://i.pinimg.com/originals/93/d4/3c/93d43c25b863001ad11b70c3500c0e77.jpg">
+              <figcaption><b>Sam</b></figcaption><br>
+              <figcaption>Owner</figcaption><br>
+              <figcaption>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</figcaption><br>
+              <figcaption><button>Contact</button></figcaption>
+        </figure>
+        </div>
+
+        <div class="C1">
+        <figure>
+            <img src="https://machohairstyles.com/wp-content/uploads/2017/03/short-curly-haircut-for-men-7-2048x1961.jpg">
+            <figcaption><b>John</b></figcaption><br>
+            <figcaption>Owner</figcaption><br>
+            <figcaption>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</figcaption><br>
+            <figcaption><button>Contact</button></figcaption>
+        </figure>
+        </div>
+
+        <div class="C1">
+        <figure>
+            <img src="https://i.pinimg.com/originals/1b/2e/46/1b2e46115a8dac9002972dcb6380ac9e.jpg">
+            <figcaption><b>Rocky</b></figcaption><br>
+            <figcaption>Architect</figcaption><br>
+            <figcaption>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</figcaption><br>
+            <figcaption><button>Contact</button></figcaption>
+        </figure>
+        </div>
+
+        <div class="C1">
+        <figure>
+            <img src="https://i.pinimg.com/originals/38/dd/59/38dd592e0b0066d7595b8b878f9428fa.jpg">
+            <figcaption><b>Maddy</b></figcaption><br>
+            <figcaption>Architect</figcaption><br>
+            <figcaption>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</figcaption><br>
+            <figcaption><button>Contact</button></figcaption>
+        </figure>
+        </div><br>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <hr>
+        <p>&emsp;&emsp;Lets get in touch and talk about your next project.</p>
+        <form>
+           <input type="text" placeholder="Text"><br><br>
+           <input type="email" placeholder="Email"><br><br>
+           <input type="text" placeholder="Subject"><br><br>
+           <input type="text" placeholder="Comment"><br><br>
+           <button>Send Message</button>
+        </form>
+    </section><br><br>
+</body>
+</html>
